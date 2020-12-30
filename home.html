@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="flex1">
+        <div class="project_logo">
+            <a href="./index.html"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a>
+        </div>
+        <div class="flex1_1">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Time</a></div>
+            <div><a href="./Project.html">Projects</a></div>
+            <div><a href="#">Clients</a></div>
+            <div><a href="Team.html">Team</a></div>
+            <div><a href="#">Reports</a></div>
+        </div>
+        <div class="flex1_2">
+            <div><a href="#">Subscribe Now</a></div>
+            <div>
+                <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
+            </div>
+            <div>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a>
+            </div>
+            <div class="project_dropdown">
+                <button onclick="myFunction()" class="project_dropbtn">^</button>
+                <div id="project_myDropdown" class="project_dropdown-content">
+                    <a href="#">My Profile</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Team Settings</a>
+                    <a href="#">Billing <button id="trial">Trial</button></a>
+                    <a href="#">Apps</a>
+                    <a href="#">Request a Demo</a>
+                    <a href="#">Help Docs</a>
+                    <a href="#"><span class="pro_sign">Sign Out</span></a>
+                </div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("project_myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.project_dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("project_dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!-- navbar End -->
+    </div>
+    <div class="home__body">
+        <h3 class="home__body__activity">
+            Team activity and availability
+        </h3>
+        <a class="home__body__click" href="">Click to view details</a>
+
+        <div class="home__body__timesheet">
+            <h2>Team timesheet</h2>
+            <div class="timesheet__table">
+                <div class="table_colom1">
+                    <div class="table_header"><span class="show_text">show:</span><span>Everyone</span><i class="show_text arrow_down fas fa-angle-down"></i></div>
+                    <div class="username">
+                        <a href="">priyanka890</a>
+                    </div>
+                    <div class="left_total">Total</div>
+                </div>
+                <div class="table_colom2">
+                    <div class="table_header">
+                        <div class="week_name">Last Week</div>
+                        <div class="day_wrap">
+                            <div class="day_name">Su</div>
+                            <div class="day_name">Mo</div>
+                            <div class="day_name">Tu</div>
+                            <div class="day_name">We</div>
+                            <div class="day_name">Th</div>
+                            <div class="day_name">Fr</div>
+                            <div class="day_name">Sa</div>
+
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                    </div>
+                    <div class="total_time">
+                        <div>3h</div>
+                    </div>
+
+                </div>
+                <div class="table_colom2">
+                    <div class="table_header">
+                        <div class="week_name">This Week</div>
+                        <div class="day_wrap">
+                            <div class="day_name">Su</div>
+                            <div class="day_name">Mo</div>
+                            <div class="day_name">Tu</div>
+                            <div class="day_name">We</div>
+                            <div class="day_name">Th</div>
+                            <div class="day_name">Fr</div>
+                            <div class="day_name">Sa</div>
+
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                        <div class="time">
+                            <div class="hrs">2.00</div>
+                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                        </div>
+                    </div>
+                    <div class="total_time">
+                        <div>3h</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a class="home__body__click" href="">Click to view details</a>
+        <div class="home__body__projects"></div>
+        <div class="home__body__members"></div>
+    </div>
+    <div class="addtime__wrap">
+        <div class="addtime__popup">
+            <div class="popup__header">
+                <h1>Add Time</h1>
+                <div><i class="font__close fas fa-times"></i></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
