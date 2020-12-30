@@ -11,7 +11,63 @@
 </head>
 
 <body>
-    <!-- <div class="home__nav__bar"></div> -->
+
+    <div class="flex1">
+        <div class="project_logo">
+            <a href="./index.html"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a>
+        </div>
+        <div class="flex1_1">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Time</a></div>
+            <div><a href="./Project.html">Projects</a></div>
+            <div><a href="#">Clients</a></div>
+            <div><a href="Team.html">Team</a></div>
+            <div><a href="#">Reports</a></div>
+        </div>
+        <div class="flex1_2">
+            <div><a href="#">Subscribe Now</a></div>
+            <div>
+                <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
+            </div>
+            <div>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a>
+            </div>
+            <div class="project_dropdown">
+                <button onclick="myFunction()" class="project_dropbtn">^</button>
+                <div id="project_myDropdown" class="project_dropdown-content">
+                    <a href="#">My Profile</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Team Settings</a>
+                    <a href="#">Billing <button id="trial">Trial</button></a>
+                    <a href="#">Apps</a>
+                    <a href="#">Request a Demo</a>
+                    <a href="#">Help Docs</a>
+                    <a href="#"><span class="pro_sign">Sign Out</span></a>
+                </div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("project_myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.project_dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("project_dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!-- navbar End -->
+    </div>
     <div class="home__body">
         <h3 class="home__body__activity">
             Team activity and availability
