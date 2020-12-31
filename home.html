@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="loadHomeDetails()">
 
     <div class="flex1">
         <div class="project_logo">
@@ -79,8 +79,10 @@
             <div class="timesheet__table">
                 <div class="table_colom1">
                     <div class="table_header"><span class="show_text">show:</span><span>Everyone</span><i class="show_text arrow_down fas fa-angle-down"></i></div>
-                    <div class="username">
-                        <a href="">priyanka890</a>
+                    <div id="member_names">
+                        <div class="username">
+                            <a href="">priyanka890</a>
+                        </div>
                     </div>
                     <div class="left_total">Total</div>
                 </div>
@@ -98,34 +100,36 @@
 
                         </div>
                     </div>
-                    <div class="times">
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                    <div id="timesWeek1">
+                        <div class="times">
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
                         </div>
                     </div>
                     <div class="total_time">
@@ -147,36 +151,41 @@
 
                         </div>
                     </div>
-                    <div class="times">
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
-                        </div>
-                        <div class="time">
-                            <div class="hrs">2.00</div>
-                            <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                    <div id="timesWeek2">
+
+                        <div class="times">
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
+                            <div class="time">
+                                <div class="hrs">2.00</div>
+                                <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                            </div>
                         </div>
                     </div>
+
+
                     <div class="total_time">
                         <div>3h</div>
                     </div>
@@ -232,6 +241,8 @@
 
                        
                     <select>
+                        <input type="hidden" id="dayNum" />
+                        <input type="hidden" name="" id="weekNum" value="1"/>
             </form>
                 <div></div>
             </div>

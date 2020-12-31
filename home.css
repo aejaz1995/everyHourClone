@@ -169,7 +169,7 @@
 .time {
     position: relative;
     border-left: 1px solid #e8e8e8;
-    ;
+    border-bottom: 1px solid #e8e8e8;
     padding: 5px;
     height: 24px;
     width: 39px;
@@ -285,7 +285,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
 }
 
 .addtime__popup {
