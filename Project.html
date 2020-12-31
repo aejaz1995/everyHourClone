@@ -101,8 +101,8 @@
                 </div>
             </div>
             </div>
-            <button class="project_chat" class="open-button" onclick="openForm()">
-                search..
+            <button class="project_chat" class="open-button" id="project_chat_interval" onclick="openForm()">
+               <img src="https://www.cambodianexpress.com/giant_content/uploads/2019/07/search_icon.png" alt="chat image"> Help
             </button>
             <div class="form-popup" id="myForm">
                 <form action="https://www.google.com/" class="form-container">
@@ -123,7 +123,14 @@
  
                function closeForm() {
              document.getElementById("myForm").style.display = "none";
-                                 }
+                                 } 
+              document.getElementById('project_chat_interval').style.display="none";
+              var id=setTimeout(anim,3000);
+              function anim(){
+              var target=document.getElementById('project_chat_interval');
+              target.style.display="block";
+              }      
         </script>
+        
     </body>
 </html>
