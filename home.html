@@ -188,15 +188,68 @@
         <div class="home__body__projects"></div>
         <div class="home__body__members"></div>
     </div>
-    <div class="addtime__wrap">
+    <div id="addtime__wrap" class="addtime__wrap">
         <div class="addtime__popup">
             <div class="popup__header">
                 <h1>Add Time</h1>
-                <div><i class="font__close fas fa-times"></i></div>
+                <div><i id="fontClose" class="font__close fas fa-times"></i></div>
             </div>
+            <div class="member__wrap">
+                <div>
+                    <form class="member__form" action="">
+                        <label for="">Member</label>
+                        <select id="member_name" class="member__name">
+
+                            <!-- <option value="priyanka">priyanka</option>
+                            <option value="aman">aman</option>
+                            <option value="Aejaz">Aejaz</option>
+                            <option value="himanshu">himanshu</option>
+                            <option value="vamshi">vamshi</option>
+                            <option value="tulasi">tulasi</option>
+                            <option value="druvika">druvika</option> -->
+                        <select>
+                    </form>
+                </div>
+                <div>
+                    <label  id="inputDate" class="date__label" for="">Date</label>
+                    <div class="member__date">
+                        <input class="member__input" type="date">
+                    </div>
+                </div>
+                <div>
+                    <label class="time__label" for="">Time</label>
+                    <input id="inputTime"
+                     class="input__time" type="text" placeholder="ex-2h">
+                </div>
+            </div>
+            <div class="project__wrap">
+                <form class="member__form" action=""></form>
+                <label for="">Project/Task</label>
+                <select id="projectList" class="member__name member__project">
+                    
+                <select>
+                    <select id="projectTask"  class="member__name member__task ">
+
+                       
+                    <select>
+            </form>
+                <div></div>
+            </div>
+            <div class="time__comments">
+                <label for="">Time Comments</label>
+                <textarea class="text__area" name="" id="comments" cols="30" placeholder="Explain your progress" rows="10"></textarea>
+            </div>
+            <div class="addtime__buttons">
+                <button id="addTime">Add Time</button>
+                <button>Save and Add Another</button>
+                <button id="btn">Cancel</button>
+            </div>
+
+
 
         </div>
     </div>
+    <script src="home.js"></script>
 </body>
 
 </html>

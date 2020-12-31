@@ -198,7 +198,7 @@
     display: flex;
     visibility: show;
     opacity: 1;
-    z-index: 2;
+    /* z-index: 2; */
     cursor: pointer;
 }
 
@@ -274,8 +274,8 @@
 }
 
 .addtime__wrap {
-    /* position: fixed;
-                top: 0; */
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(128, 128, 128, 0.185);
@@ -290,11 +290,12 @@
 
 .addtime__popup {
     z-index: 2;
+    margin-top: 100px;
     width: 600px;
     height: 500px;
+    border-radius: 10px;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 15px;
+    padding-bottom: 20px;
 }
 
 .popup__header {
@@ -303,6 +304,7 @@
     justify-content: space-between;
     padding: 10px 30px;
     background-color: #f6f9fa;
+    border-radius: 20px 20px 0 0;
 }
 
 .popup__header>h1 {
@@ -318,4 +320,192 @@
 
 .font__close {
     font-size: 30px;
+}
+
+.font__close :hover {
+    font-size: 30px;
+}
+
+.member__wrap {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.member__wrap>div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.member__name {
+    width: 200px;
+    height: 35px;
+    border: 0.1px solid rgb(209, 208, 208);
+    border-radius: 2px;
+}
+
+.input__time {
+    width: 110px;
+    height: 35px;
+    outline: none;
+    border: 0.1px solid rgb(209, 208, 208);
+    margin-left: 40px;
+}
+
+.member__date {
+    width: 120px;
+    height: 35px;
+    border: 0.1px solid rgb(209, 208, 208);
+    /* margin-right: 10px; */
+}
+
+.date__label {
+    margin-left: 20px;
+}
+
+.time__label {
+    margin-left: 40px;
+}
+
+.project__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.time__comments>label {
+    font-family: Lato, sans-serif;
+    font-kerning: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.text__area {
+    font: inherit;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #444;
+    outline: 0;
+    padding: 7px 12px;
+    width: 83%;
+    border-color: #ddd;
+    height: 88px;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.addtime__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.addtime__buttons>button:nth-child(1) {
+    font-size: 13px;
+    height: 38px;
+    min-width: 125px;
+    border-radius: 1.8px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    outline: 0;
+    padding: 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    background-color: #10a152;
+    border-color: #10a152;
+}
+
+.addtime__buttons>button:nth-child(2) {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 22px;
+    height: 40px;
+    min-width: 128px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    outline: 0;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: #eee;
+    border-color: #c8c8c8;
+    color: #444;
+}
+
+.member__project {
+    /* width: ; */
+}
+
+.addtime__buttons>button:nth-child(3) {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 22px;
+    height: 40px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    outline: 0;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    color: #4a90e2;
+    margin-right: 0;
+}
+
+.member__project,
+.member__task {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    color: #444;
+    cursor: pointer;
+    border-color: #ddd;
+    height: 40px;
+    width: 87%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    outline: none;
+}
+
+.member__input {
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: 0.1px solid rgb(209, 208, 208);
+    background-color: white;
+}
+
+.member__date {
+    margin-left: 20px;
+}
+
+.member__form {
+    width: 180px;
 }
