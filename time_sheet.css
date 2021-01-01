@@ -1,0 +1,97 @@
+.time_sheet{
+    width: 1188px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.time_sheet_member_info,.time_sheet_header{
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+}
+.time_sheet_member_info,.time_sheet_header:hover{
+    background: #fcfcfc;
+}
+
+.time_sheet_day{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    max-width: 88px;
+    width: 100%;
+    
+    justify-content: center;
+    padding-right: 0px 12px 0px 0px;
+    cursor: pointer;
+}
+
+.time_sheet_border_right{
+    border-right: 1px dotted #f2f2f2;
+}
+
+.time_sheet_member{
+
+    border-right: 1px dotted #f2f2f2;
+    max-width: 452px;
+    width: 100%;
+    cursor: pointer;
+    /*  */
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+/* class for icon inside memeber */
+.icon{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 10px;
+}
+i{
+    margin: -4px;
+}
+/*  */
+.day_box{
+align-items: flex-end;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0px 12px 0px 0px;
+width: 100%;
+}
+
+.time,.day_name_SunNSat,.day_name{
+  
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+ 
+}
+.time,.day_name{
+    color: black;
+}
+.day_name_SunNSat{
+    color: #a2aab1;
+}
+
+.date{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-right: 1px;
+    color: #a2aab1;  
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
