@@ -4,34 +4,45 @@
 /* navbar css starts */
 .flex1{
     display: flex;
+    border-bottom: 1px solid rgb(242, 242, 242) ;
+    padding-bottom: 10px;
 }
-.flex1_1>div,.flex1_2>div{
-    margin-left: 20px;
-    padding-top: 30px;
+.flex1_1>div,.flex1_2>div:nth-child(1),.flex1_2>div:nth-child(2){
+    margin-left: 25px;
+    padding-top: 25px;
+}
+.flex1_2>div:nth-child(3){
+    margin-left: 10px;
+    padding-top: 20px;
+}
+.flex1_2>div:nth-child(4){
+    margin-left: 10px;
+    padding-top: 25px;
 }
 .flex1_1,.flex1_2{
     display: flex;
 }
 .flex1_1{
-    margin-right: 150px;
+    margin-right: 270px;
 }
 .flex1_1>div>a{
     text-decoration: none;
-    color:rgb(128, 122, 122);
-    font-size: 18px;
+    color:#a2aab1;
+    font-size: 16px;
+    font-weight: 500;
     font-family: sans-serif;
 }
 .flex1_1>div>a:hover{
     color: black;
 }
 .project_logo>a>img{
-    height: 50px;
-    width: 50px;
+    height: 36px;
+    width: 36px;
 }
 .project_logo{
-    margin-right: 270px;
+    margin-right: 320px;
     margin-left: 40px;
-    padding-top: 10px;
+    padding-top: 16px;
 }
 .flex1_2>div>a{
     text-decoration: none;
@@ -51,50 +62,66 @@
     width: 20px;
     color:rgb(128, 122, 122);
 }
+#project_subscribe>a{
+    font-size: 14px;
+}
 /* navbar css end */
 .project_body{
     background-color: rgb(250, 250, 250);
     height: 800px;
-    margin-top: 10px;
 }
 .flex2{
     background-color: white;
-    width: 1100px;
-    height: 350px;
-    margin-left: 120px;
+    width: 1180px;
+    height: 320px;
+    margin-left: 100px;
+    border-radius:7px;
     margin-right: 50px;
-    margin-top: 50px;
-    border: 0.5px solid rgb(199, 189, 189);
+    margin-top: 30px;
+    border: 1px solid 	rgb(242, 242, 242);
 }
 .flex2_1{
     display: flex;
+    padding-bottom: 10px;
 }
 .flex2_1>div:nth-child(1){
     color: grey;
     margin-left: 50px;
     margin-top: 10px;
-    margin-right: 600px;
+    margin-right: 630px;
 }
 .flex2_1>div:nth-child(2){
     color: grey;
-    margin-left: 100px;
-    margin-top: 32px;
+    margin-left: 250px;
+    margin-top: 25px;
 }
 .flex2_1>div:nth-child(2)>button{
      height: 40px;
-     width: 150px;
+     width: 125px;
      font-size:14px;
      background-color: rgb(36, 190, 106);
      color: white;
-     font-weight: bold;
+     font-weight: 300;
      border: 1px solid rgb(36, 190, 106) ;
+     font-family: Arial, Helvetica, sans-serif;
+     outline: none;
 }
 .flex2_1>div:nth-child(2)>button:hover{
-    background-color: rgb(42, 201, 42);
+    background-color: rgb(57, 200, 110);
+}
+#menu1{
+    font-size: 10px;
+}
+#menu2{
+    font-size: 10px;
+}
+#project_active{
+    font-size: 14px;
+    color: black;
 }
 .flex2_2{
     display: flex;
-    background-color: #d5e0d8;
+    background-color: rgb(250, 250, 250);
     width: 100%;
     height: 70px;
     margin-top: 15px;
@@ -109,7 +136,7 @@ span{
     color: rgb(184, 175, 175);
 }
 .flex2_2>div:nth-child(2){
-    margin-left: 350px;
+    margin-left: 500px;
     margin-top: 10px;
 }
 
@@ -118,14 +145,17 @@ span{
     margin-top: 10px;
 }
 .flex2_2>div:nth-child(4){
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 15px;
 }
 .flex2_2>div:nth-child(4)>input{
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 230px;
     padding-left: 15px;
-    border: 1px solid rgb(36, 201, 36);
+    border: 1px solid rgb(242, 242, 242) ;
+}
+.flex2_2>div:nth-child(4)>input:hover{
+    border: 1px solid rgb(39, 216, 39) ;
 }
 .flex2_2>div:nth-child(2)>button{
     width: 120px;
@@ -135,18 +165,14 @@ span{
     border: 1px solid rgb(39, 216, 39);
 }
 .project_dropbtn {
-    background-color: #3498DB;
+    background-color:white;
     color: white;
-    padding: 16px;
+    padding: 5px;
     font-size: 16px;
-    border: none;
+    border:none;
     cursor: pointer;
+    outline: none;
   }
-  
-  .project_dropbtn:hover, .project_dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
   .project_dropdown {
     position: relative;
     display: inline-block;
@@ -155,18 +181,21 @@ span{
   .project_dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color:white;
+    min-width: 200px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0;
+    border:5px solid rgb(242, 242, 242);
+    border-radius: 8px;
   }
   
   .project_dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 8px 16px;
     text-decoration: none;
     display: block;
+    border-bottom: 0.2px solid rgb(242, 242, 242);
   }
   
   .project_dropdown a:hover {background-color: #ddd;}
@@ -177,7 +206,6 @@ span{
     border: 1px solid orangered;
 }  
 #project_myDropdown>a{
-    font-weight: bold;
     font-family: sans-serif;
 }
 .pro_sign{
@@ -188,18 +216,30 @@ span{
     color: black;
 }
 #menu1{
-    height: 48px;
-    width: 140px;
-    border: 1px solid rgb(19, 221, 19);
+    height: 42px;
+    width: 100px;
+    margin-top: 5px;  
+    margin-left: 60px;
+    outline: none;
+}
+#menu2{
+    height: 42px;
+    width: 100px;
+    margin-top: 5px;
+    border: 1px solid rgb(36, 190, 106); 
+    outline: none;
 }
 #menu1:hover{
     border: 1px solid black;
+    background-color: white;
 }
 .flex_3{
     display: flex;
 }
 .flex_3>div:nth-child(2){
     margin-left: 5px;
+    font-size: 14px;
+    margin-top: 3px;
 }
 .flex1_1>div:nth-child(1):hover,.flex1_1>div:nth-child(2):hover
 ,.flex1_1>div:nth-child(3):hover,.flex1_1>div:nth-child(4):hover
@@ -212,14 +252,15 @@ span{
     left: 0;
     bottom: 0;
     height: 60px;
-    width: 120px;
-    border-radius: 25px;
+    width: 110px;
+    border-radius: 28px;
     background-color: 	rgb(36, 190, 106);
-    margin-left: 1200px;
+    margin-left: 1220px;
     color: white;
     font-weight: bold;
     font-size: 14px;
     border: 1px solid white;
+    outline: none;
     
 }
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -236,6 +277,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   bottom: 23px;
   right: 28px;
   width: 280px;
+  outline: none;
 }
 .form-popup {
   display: none;
@@ -244,12 +286,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  outline: none;
 }
 
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
+  outline: none;
 }
 
 .form-container input[type=text], .form-container input[type=password] {
@@ -258,6 +302,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+  outline: none;
 }
 .form-container .btn {
   background-color: 	rgb(36, 190, 106);
@@ -268,16 +313,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  outline: none;
 }
 
 .form-container .cancel {
   background-color: red;
+  outline: none;
 }
 
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
 .project_chat>img{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+}
+#project_h2{
+    font-family: sans-serif;
+    font-kerning: normal;
+    font-weight: 400;
+    color: #444;
+    font-size: 24px;
 }
