@@ -141,3 +141,96 @@
        height: 40px;
        min-width: 10px;
    }
+   
+   .thirtymin {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .thirtymin>h1 {
+       font-family: 'geomanist-book', sans-serif;
+       font-weight: 400;
+       color: #333;
+       font-size: 2.8rem;
+       line-height: 1.17;
+   }
+   
+   .thirtymin>h3 {
+       text-align: center;
+       margin-top: 0px;
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       font-size: 1.375rem;
+       line-height: 1.36;
+       color: #767676;
+   }
+   
+   .thirtymin>button {
+       outline: 0;
+       cursor: pointer;
+       width: 200px;
+       color: #fff;
+       border-radius: 4px;
+       font-size: 1rem;
+       line-height: 1;
+       width: 200px;
+       height: 48px;
+       text-decoration: none;
+       transition: .3s;
+       background: #1abf68;
+       border: 0;
+       box-shadow: 0 0 30px 0 rgba(26, 191, 104, 0.4);
+       border-bottom: 200px;
+   }
+   
+   .demo__list>h4,
+   .demo__list>h4 {
+       font-family: 'geomanist-book', sans-serif;
+       font-weight: 400;
+       color: #333;
+       color: black;
+       margin-bottom: .5rem;
+       font-size: 1.25rem;
+       line-height: 1.44;
+       padding-left: 2rem;
+       position: relative;
+   }
+   
+   .demo__list>ul>li {
+       font-weight: 400;
+       font-family: 'geomanist-regular', sans-serif;
+       position: relative;
+       font-size: 1rem;
+       color: #7c7c7c;
+       line-height: 1.2;
+       padding-left: 2rem;
+   }
+   
+   .demo__wrap {
+       position: relative;
+       top: -550px;
+       left: 400px;
+   }
+   
+   .demo__back {
+       margin-left: 80px;
+       margin-top: 100px;
+   }
+   
+   ul {
+       list-style: none;
+   }
+   
+   ul li::before {
+       content: "\2022";
+       color: #1abf68;
+       font-weight: bold;
+       display: inline-block;
+       width: 1em;
+       margin-left: -1em;
+       font-size: 30px;
+       position: relative;
+       top: 5px;
+   }
