@@ -212,6 +212,8 @@
        position: relative;
        top: -550px;
        left: 400px;
+       width: 500px;
+       height: ;
    }
    
    .demo__back {
