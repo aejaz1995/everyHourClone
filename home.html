@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./Navbar.css">
+    <link rel="stylesheet" href="Project.css">
+    <title>Document</title>
+</head>
+
+<body onload="loadHomeDetails()">
+    <div class="flex1">
+        <div class="project_logo">
+            <a href="./index.html"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a>
+        </div>
+        <div class="flex1_1">
+            <div><a href="./home.html">Home</a></div>
+            <div><a href="">Time</a></div>
+            <div><a href="./project.html">Projects</a></div>
+            <div><a href="#">Clients</a></div>
+            <div><a href="team.html">Team</a></div>
+            <div><a href="#">Reports</a></div>
+        </div>
+        <div class="flex1_2">
+            <div id="project_subscribe"><a href="#">Subscribe Now</a></div>
+            <div>
+                <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
+            </div>
+            <div>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a>
+            </div>
+            <div class="project_dropdown">
+                <button onclick="myFunction()" class="project_dropbtn">^</button>
+                <div id="project_myDropdown" class="project_dropdown-content">
+                    <a href="#">My Profile</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Team Settings</a>
+                    <a href="#">Billing <button id="trial">Trial</button></a>
+                    <a href="#">Apps</a>
+                    <a href="#">Request a Demo</a>
+                    <a href="#">Help Docs</a>
+                    <a href="#"><span class="pro_sign">Sign Out</span></a>
+                </div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("project_myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.project_dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("project_dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- navbar End -->
+    </div>
+    <div class="body_wrap">
+        <div class="home__body">
+            <h3 class="home__body__activity">
+                Team activity and availability
+            </h3>
+            <img class="person__logo" src="./images/person-logo.jpg" alt="">
+            <a class="home__body__click" href="">Click to view details</a>
+
+            <div class="home__body__timesheet">
+                <h2>Team timesheet</h2>
+                <div class="timesheet__table">
+                    <div class="table_colom1">
+                        <div class="table_header"><span class="show_text">show:</span><span>Everyone</span><i class="show_text arrow_down fas fa-angle-down"></i></div>
+                        <div id="member_names">
+                            <div class="username">
+                                <a href="">priyanka890</a>
+                            </div>
+                        </div>
+                        <div class="left_total">Total</div>
+                    </div>
+                    <div class="table_colom2">
+                        <div class="table_header">
+                            <div class="week_name">Last Week</div>
+                            <div class="day_wrap">
+                                <div class="day_name">Su</div>
+                                <div class="day_name">Mo</div>
+                                <div class="day_name">Tu</div>
+                                <div class="day_name">We</div>
+                                <div class="day_name">Th</div>
+                                <div class="day_name">Fr</div>
+                                <div class="day_name">Sa</div>
+
+                            </div>
+                        </div>
+                        <div id="timesWeek1">
+                            <div class="times">
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total_time">
+                            <div>3h</div>
+                        </div>
+
+                    </div>
+                    <div class="table_colom2">
+                        <div class="table_header">
+                            <div class="week_name">This Week</div>
+                            <div class="day_wrap">
+                                <div class="day_name">Su</div>
+                                <div class="day_name">Mo</div>
+                                <div class="day_name">Tu</div>
+                                <div class="day_name">We</div>
+                                <div class="day_name">Th</div>
+                                <div class="day_name">Fr</div>
+                                <div class="day_name">Sa</div>
+
+                            </div>
+                        </div>
+                        <div id="timesWeek2">
+
+                            <div class="times">
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                                <div class="time">
+                                    <div class="hrs">2.00</div>
+                                    <div class="add_time"><i class="fa fa-plus-circle" aria-hidden="false"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="total_time">
+                            <div>3h</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="home__body__click" href="">Click to view details</a>
+            <div class="home__body__projects"></div>
+            <div class="home__body__members"></div>
+            <div class="home__table1">
+                <h3>Tasks with the most spent time</h3>
+                <div class="home__table__box">
+                    <div class="home__table__box1">
+                        <div><span class="table1__group">Group:</span> <span class="table1__task">Task</span> <i class="show_text1 arrow_down fas fa-angle-down"></i>
+                        </div>
+
+                        <div><span class="table1__group">Period:</span> <span class="table1__task">Yesterday</span> <i class="show_text1 arrow_down fas fa-angle-down"></i>
+                        </div>
+
+                    </div>
+                    <img class="back__1" src="./images/home-back-1.PNG" alt="">
+
+                </div>
+
+            </div>
+            <div class="home__table1 home__table__features">
+                <h3>Members with the most spent time</h3>
+                <div class="home__table__box  home__table__box2">
+                    <div class="home__table__box1">
+                        <div><span class="table1__group">Group:</span> <span class="table1__task">Member</span> <i class="show_text1 arrow_down fas fa-angle-down"></i>
+                        </div>
+
+                        <div><span class="table1__group">Period:</span> <span class="table1__task">Yesterday</span> <i class="show_text1 arrow_down fas fa-angle-down"></i>
+                        </div>
+                        <div><span class="table1__group">Period:</span> <span class="table1__task">Time</span> <i class="show_text1 arrow_down fas fa-angle-down"></i>
+                        </div>
+
+                    </div>
+                    <img class="back__1 back__2" src="./images/home-back-2.PNG" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div id="addtime__wrap" class="addtime__wrap">
+            <div class="addtime__popup">
+                <div class="popup__header">
+                    <h1>Add Time</h1>
+                    <div><i id="fontClose" class="font__close fas fa-times"></i></div>
+                </div>
+                <div class="member__wrap">
+                    <div>
+                        <form class="member__form" action="">
+                            <label for="">Member</label>
+                            <select id="member_name" class="member__name">
+
+                                <!-- <option value="priyanka">priyanka</option>
+                            <option value="aman">aman</option>
+                            <option value="Aejaz">Aejaz</option>
+                            <option value="himanshu">himanshu</option>
+                            <option value="vamshi">vamshi</option>
+                            <option value="tulasi">tulasi</option>
+                            <option value="druvika">druvika</option> -->
+                                <select>
+                        </form>
+                    </div>
+                    <div>
+                        <label id="inputDate" class="date__label" for="">Date</label>
+                        <div class="member__date">
+                            <input class="member__input" type="date">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="time__label" for="">Time</label>
+                        <input id="inputTime" class="input__time" type="text" placeholder="ex-2h">
+                    </div>
+                </div>
+                <div class="project__wrap">
+                    <form class="member__form" action=""></form>
+                    <label for="">Project/Task</label>
+                    <select id="projectList" class="member__name member__project">
+
+                        <select>
+                            <select id="projectTask" class="member__name member__task ">
+
+
+                                <select>
+                                    <input type="hidden" id="dayNum" />
+                                    <input type="hidden" name="" id="weekNum" value="1" />
+                                    </form>
+                                    <div></div>
+                </div>
+                <div class="time__comments">
+                    <label for="">Time Comments</label>
+                    <textarea class="text__area" name="" id="comments" cols="30" placeholder="Explain your progress"
+                        rows="10"></textarea>
+                </div>
+                <div class="addtime__buttons">
+                    <button id="addTime">Add Time</button>
+                    <button>Save and Add Another</button>
+                    <button id="btn">Cancel</button>
+                </div>
+
+
+
+            </div>
+
+            <script src="home.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
