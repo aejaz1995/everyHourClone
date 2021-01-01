@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,113 +13,119 @@
     <link rel="stylesheet" href="time_sheet.css">
     <title>Document</title>
 </head>
+
 <body>
-         <!-- navbar starts -->
-         <div class="flex1">
-            <div class="project_logo"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a></div>
-            <div class="flex1_1">
-                <div><a href="#">Home</a></div>
-                <div><a href="#">Time</a></div>
-                <div><a href="#">Projects</a></div>
-                <div><a href="#">Clients</a></div>
-                <div><a href="Team.html">Team</a></div>
-                <div><a href="#">Reports</a></div>
-            </div>
-            <div class="flex1_2">
-                <div><a href="#">Subscribe Now</a></div>
-                <div><a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a></div>
-                <div><a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a></div>
-                <div class="project_dropdown">
-                    <button onclick="myFunction()" class="project_dropbtn">^</button>
-                    <div id="project_myDropdown" class="project_dropdown-content">
-                      <a href="#">My Profile</a>
-                      <a href="#">Integrations</a>
-                      <a href="#">Team Settings</a>
-                      <a href="#">Billing <button id="trial">Trial</button></a>
-                      <a href="#">Apps</a>
-                      <a href="#">Request a Demo</a>
-                      <a href="#">Help Docs</a>
-                      <a href="#"><span class="pro_sign">Sign Out</span></a>
-                    </div>
-                  </div>
-                  
-                  <script>
-                  function myFunction() {
-                    document.getElementById("project_myDropdown").classList.toggle("show");
-                  }
-            
-                  window.onclick = function(event) {
-                    if (!event.target.matches('.project_dropbtn')) {
-                      var dropdowns = document.getElementsByClassName("project_dropdown-content");
-                      var i;
-                      for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                          openDropdown.classList.remove('show');
-                        }
-                      }
-                    }
-                  }
-                  </script>
-            </div>
+    <!-- navbar starts -->
+    <div class="flex1">
+        <div class="project_logo">
+            <a href="./index.html"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a>
         </div>
-    
+        <div class="flex1_1">
+            <div><a href="./home.html">Home</a></div>
+            <div><a href="#">Time</a></div>
+            <div><a href="./project.html">Projects</a></div>
+            <div><a href="#">Clients</a></div>
+            <div><a href="Team.html">Team</a></div>
+            <div><a href="#">Reports</a></div>
+        </div>
+        <div class="flex1_2">
+            <div><a href="#">Subscribe Now</a></div>
+            <div>
+                <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
+            </div>
+            <div>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a>
+            </div>
+            <div class="project_dropdown">
+                <button onclick="myFunction()" class="project_dropbtn">^</button>
+                <div id="project_myDropdown" class="project_dropdown-content">
+                    <a href="#">My Profile</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Team Settings</a>
+                    <a href="#">Billing <button id="trial">Trial</button></a>
+                    <a href="#">Apps</a>
+                    <a href="#">Request a Demo</a>
+                    <a href="#">Help Docs</a>
+                    <a href="#"><span class="pro_sign">Sign Out</span></a>
+                </div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("project_myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.project_dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("project_dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+
     <div class="team_main">
-            <div class="team_main_title">
-                <h1>Team
-                    <span class="icon_menu team_action_popover" data-tooltip="Team actions">
+        <div class="team_main_title">
+            <h1>Team
+                <span class="icon_menu team_action_popover" data-tooltip="Team actions">
                         <i  onclick="popup()" class="material-icons">&#xe5d3;</i>
                     </span>
-                </h1>
+            </h1>
+        </div>
+        <div class="page_tabs page_tabs_settings">
+            <div class="page_tab_cont">
+                <div id="tab_1" class="tabs active" onclick="openTab(id,'show_member','show_period','locale_storage','page_list')"><span> Timers</span></div>
+                <div id="tab_2" class="tabs" style="border: none;" onclick="openTab(id,'show_member','show_time_sheet')"><span> Timesheets</span></div>
+                <div id="tab_3" class="tabs" style="border: none;" onclick="openTab(id)"><span>Timecards</span></div>
+                <div id="tab_4" class="tabs" style="border: none;" onclick="openTab(id,'show_checkbox','show_controller')"><span>Members</span></div>
             </div>
-            <div class="page_tabs page_tabs_settings">
-                <div class="page_tab_cont">
-                    <div id="tab_1" class="tabs active"  onclick="openTab(id,'show_member','show_period','locale_storage','page_list')"><span> Timers</span></div>
-                    <div id="tab_2" class="tabs" style="border: none;" onclick="openTab(id,'show_member','show_time_sheet')" ><span> Timesheets</span></div>
-                    <div id="tab_3" class="tabs" style="border: none;" onclick="openTab(id)"><span>Timecards</span></div>
-                    <div id="tab_4" class="tabs" style="border: none;" onclick="openTab(id,'show_checkbox','show_controller')"><span>Members</span></div>
-                </div>
+        </div>
+        <!-- below tabs -->
+        <!-- page manager -->
+        <div class="page_manager" id="page_manager">
+            <div class="member_div  not_tabs" id='show_member'>
+                <span class="member_span1 ">Member :</span>
+                <span class="all_span">All</span>
             </div>
-            <!-- below tabs -->
-            <!-- page manager -->
-            <div class="page_manager" id="page_manager">
-                        <div class="member_div  not_tabs" id='show_member'>
-                            <span  class="member_span1 ">Member :</span>
-                            <span class="all_span">All</span>
-                        </div>
 
-                <!-- time and period and search -->
-                <div class="time_period not_tabs" id="show_period" >
-                    <div class="period_drp" style=" border:1px solid #24be6a;background:white;">
-                        <div> 
-                            <span>
+            <!-- time and period and search -->
+            <div class="time_period not_tabs" id="show_period">
+                <div class="period_drp" style=" border:1px solid #24be6a;background:white;">
+                    <div>
+                        <span>
                                 Period
                             </span><br>
-                            <span>
+                        <span>
                                 Today
                             </span>
-                        </div>
                     </div>
-                    <!-- search div -->
-                        <div class="search_div" id="search_div">
-                            
-                            <input placeholder="search member..." type="text" id="search_bar"  onkeyup="search()">
-                        </div>
                 </div>
+                <!-- search div -->
+                <div class="search_div" id="search_div">
 
-            
-                <div class="page_checkbox not_tabs" id="show_checkbox">
-                    <input type="checkbox">
-                    Select all
+                    <input placeholder="search member..." type="text" id="search_bar" onkeyup="search()">
                 </div>
+            </div>
 
-                <div class="page_controller_manager not_tabs" id="show_controller">
-                    <div class="period_drp" style="background: white; border: 1px solid #e8e8e8;">
-                        <div >
-                            <span>Group By:</span><br>
-                            <span>Role</span>
-                        </div>
+
+            <div class="page_checkbox not_tabs" id="show_checkbox">
+                <input type="checkbox"> Select all
+            </div>
+
+            <div class="page_controller_manager not_tabs" id="show_controller">
+                <div class="period_drp" style="background: white; border: 1px solid #e8e8e8;">
+                    <div>
+                        <span>Group By:</span><br>
+                        <span>Role</span>
                     </div>
+                </div>
                 <div class="controller_drpdwn">
                     <div>
                         <span>Filter</span>
@@ -126,21 +133,21 @@
                     </div>
                 </div>
                 <div class="search_div" id="search_div">
-                    
+
                     <input placeholder="search member..." type="text">
                 </div>
-                </div>
-                <!-- week filter starts-->
-                
-                <!-- week filter ends -->
-         </div>
+            </div>
+            <!-- week filter starts-->
 
-         <!-- after page manager -->
-         <div class="page_list not_tabs" id="page_list" >
-            <div style="margin-bottom: 50px;">
+            <!-- week filter ends -->
+        </div>
+
+        <!-- after page manager -->
+        <div class="page_list not_tabs" id="page_list">
+            <div>
                 <div class="page_list_group">
                     <div>
-                        <div class="page_list_att" >
+                        <div class="page_list_att">
                             <div class="page_lable" style="margin-right: 200px;">
                                 <span>
                                     Inactive
@@ -161,25 +168,46 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <!--  -->
             <!--  -->
-            <div class="local_storage not_tabs" id="locale_storage" style="margin-top: -50px;">
+            <div id="timers__rows">
+                <div class="member__row">
+                    <div class="member__name">
+                        <div class="name_icon">
+                            P
+                        </div>
+                        <div class="member__name__details">Priyanka</div>
+                    </div>
+                    <div class="memeber__activity">
+                        <div> be regular</div>
+                        <div> be regular</div>
+                        <div> be regular</div>
+                        <div> be regular</div>
+                        <div> be regular</div>
+                        <div> be regular</div>
+
+                    </div>
+                    <div class="member__total"> 29:00</div>
+
+                </div>
+            </div>
+            <!-- <div class="local_storage not_tabs" id="locale_storage" style="margin-top: -50px;">
                 <div style="display: flex;flex-direction: row;">
                     <a href='#'>
                         <span class="" id="user_img_span" data-tooltip="asdafs">
                     </span></a>
 
-                   <div id="activity" style="display: flex;flex-direction: column;">
-                    
-                   </div>
-                   <div id="total">
-                       
-                   </div>
+                    <div id="activity" style="display: flex;flex-direction: column;">
+
+                    </div>
+                    <div id="total">
+
+                    </div>
                 </div>
-            </div>
+            </div> -->
             <!--  -->
             <!--  -->
         </div>
@@ -188,164 +216,164 @@
         <div class="time_sheet not_tabs" id="show_time_sheet">
             <!--  -->
             <div class="time_sheet_header">
-                    <div class="time_sheet_member">member
-                            <!--span for icon  -->
-                        <span class="icon">
+                <div class="time_sheet_member">member
+                    <!--span for icon  -->
+                    <span class="icon">
                             <i style="font-size:14px" class="fa">&#xf106;</i>
                             <i style="font-size:14px" class="fa">&#xf107;</i>
                         </span>
-                    </div>
-                           <div class="time_sheet_border_right time_sheet_day">
-                               <span class="day_box">
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                    <!--inside day box 2span  -->
                                     <span class="day_name_SunNSat">Sun</span>
-                                    <span class="date">Dec 27</span>
-                               </span>
-                            
-                            </div>
-     
-                            <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Dec 27</span>
+                    </span>
+
+                </div>
+
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Mon</span>
-                                     <span class="date">Dec 28</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Dec 28</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Tue</span>
-                                     <span class="date">Dec 29</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Dec 29</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Wed</span>
-                                     <span class="date">Dec 30</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Dec 30</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Thus</span>
-                                     <span class="date">Dec 31</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Dec 31</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Fri</span>
-                                     <span class="date">Jan 1</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Jan 1</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name_SunNSat">Sat</span>
-                                     <span class="date">Jan 2</span>
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+                    <span class="date">Jan 2</span>
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">0:10</span>
-                                     
-                                </span>
-                             
-                             </div>
-     
+
+                    </span>
+
+                </div>
+
             </div>
             <!-- time sheet header ends -->
-    
-             <div class="time_sheet_member_info">
-                 
-                    <div class="time_sheet_member" style="text-align: left;">
-                            <!--span for icon  -->
-                        <span class="icon">
+
+            <div class="time_sheet_member_info">
+
+                <div class="time_sheet_member" style="text-align: left;">
+                    <!--span for icon  -->
+                    <span class="icon">
                             <i style="font-size:14px; margin-left: -20px;" class="fa">&#xf105;</i>
-                        </span>
-                        member Name
-                    </div>
-                           <div class="time_sheet_border_right time_sheet_day">
-                               <span class="day_box">
+                        </span> member Name
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                    <!--inside day box 2span  -->
                                     <span class="day_name_SunNSat">Sun</span>
-                                    
-                               </span>
-                            
-                            </div>
-     
-                            <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Mon</span>
-                                     
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Tue</span>
-                                     
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Wed</span>
-                                     
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Thus</span>
-                                     
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">Fri</span>
-                                    
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name_SunNSat">Sat</span>
-                                     
-                                </span>
-                             
-                             </div>
-                             <div class="time_sheet_border_right time_sheet_day">
-                                <span class="day_box">
+
+                    </span>
+
+                </div>
+                <div class="time_sheet_border_right time_sheet_day">
+                    <span class="day_box">
                                     <!--inside day box 2span  -->
                                      <span class="day_name">0:10</span>
-                                     
-                                </span>
-                             
-                             </div>
-     
+
+                    </span>
+
+                </div>
+
             </div>
         </div>
         <!-- timesheet_tab;e ends -->
-        
+
         <!-- from local storage -->
-       <!--  -->
-        
+        <!--  -->
+
         <script src="team.js"></script>
 </body>
+
 </html>

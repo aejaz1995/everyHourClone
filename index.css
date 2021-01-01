@@ -2,6 +2,7 @@
                     
                     body {
                         margin: 0;
+                        width: 100%;
                     }
                     
                     .landing__navbar {
@@ -37,6 +38,16 @@
                         font-family: 'geomanist-regular', sans-serif;
                         font-weight: 400;
                         text-decoration: none;
+                    }
+                    
+                    .nav__demo {
+                        line-height: 1.44;
+                        font-size: 1.1rem;
+                        font-family: geomanist-regular, sans-serif;
+                        font-weight: 400;
+                        padding: 20px 20px 0px;
+                        text-decoration: none;
+                        color: black;
                     }
                     
                     .landing__navbar>div:nth-child(2)>a:hover {
@@ -477,7 +488,8 @@
                     .reviews {
                         display: flex;
                         flex-direction: column;
-                        margin-left: 100px;
+                        padding-left: 100px;
+                        box-sizing: border-box;
                     }
                     
                     .reviews>div:nth-child(2) {

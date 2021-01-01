@@ -1,3 +1,7 @@
+   .body {
+       margin: 0;
+   }
+   
    .landing__navbar {
        background-color: white;
        display: flex;
@@ -213,7 +217,6 @@
        top: -550px;
        left: 400px;
        width: 500px;
-       height: ;
    }
    
    .demo__back {
@@ -235,4 +238,190 @@
        font-size: 30px;
        position: relative;
        top: 5px;
+   }
+   
+   .skip {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .skip>div {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .pulse__input {
+       border-radius: 4px;
+       border: solid 1px #979797;
+       font-family: 'geomanist-regular', sans-serif;
+       color: #767676;
+       height: 48px;
+       width: 380px;
+       font-size: 1rem;
+       font-weight: normal;
+       background: #fff;
+       border-color: rgb(158, 158, 158);
+       transition: .3s;
+       outline: none;
+   }
+   
+   .pulse__button {
+       text-decoration: none;
+       cursor: pointer;
+       border: 0;
+       color: #fff;
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+       border-radius: 4px;
+       background: #57bb71;
+       text-transform: none;
+       font-size: 1rem;
+       line-height: 1;
+       font-weight: normal;
+       min-width: 152px;
+       height: 48px;
+       margin-left: 15px;
+       margin-top: 0;
+   }
+   
+   .skip>h3 {
+       margin-bottom: .5rem;
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       color: #767676;
+       font-size: 1.2rem;
+       line-height: 1.45;
+       text-align: center;
+   }
+   
+   .skip>h2 {
+       font-family: 'geomanist-book', sans-serif;
+       font-weight: 400;
+       color: #333;
+       color: black;
+       font-size: 2.0rem;
+       margin-top: 200px;
+       line-height: 1.22;
+   }
+   
+   .footer {
+       margin-top: 150px;
+       padding: 40px;
+       background-color: rgb(19, 19, 19);
+       height: 500px;
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+       font-family: 'geomanist-regular', sans-serif;
+       color: #6e6b6b;
+       font-size: 0.9rem;
+       font-weight: 400;
+   }
+   
+   .footer>div:first-child>img {
+       margin-top: 30px;
+       filter: invert(1);
+   }
+   
+   .footer_column {
+       color: rgb(214, 210, 210);
+   }
+   
+   .footer_column>ul li::before {
+       color: rgb(19, 19, 19);
+   }
+   
+   .footer_column>ul>li:first-child {
+       color: rgb(150, 148, 148);
+   }
+   
+   .footer_column>ul>li {
+       cursor: pointer;
+       margin-top: 1px;
+   }
+   
+   .terms {
+       background-color: rgb(19, 19, 19);
+       color: white;
+       display: flex;
+       justify-content: space-between;
+       padding-left: 100px;
+       padding-right: 100px;
+       height: 60px;
+       font-family: 'geomanist-regular', sans-serif;
+       /* color: #6e6b6b; */
+       font-size: 0.9rem;
+       font-weight: 400;
+   }
+   
+   .terms>div:nth-child(2)>img {
+       filter: invert(1);
+       margin-right: 8px;
+       width: 23px;
+       /* height: 50px; */
+       /* box-shadow: 1px 1px 3px 3px white; */
+       ;
+   }
+   
+   .terms>div:nth-child(2)>i {
+       color: white;
+   }
+   
+   .chat {
+       position: fixed;
+       right: 30px;
+       bottom: 10px;
+       border-radius: 100px;
+       width: 60px;
+       height: 60px;
+       background-color: rgb(101, 196, 101);
+       color: white;
+   }
+   
+   .chat>img {
+       position: relative;
+       top: 18px;
+       left: 18px;
+   }
+   
+   .whats__button {
+       font-family: 'geomanist-regular', sans-serif;
+       outline: 0;
+       cursor: pointer;
+       border: 0;
+       color: #fff;
+       height: 3rem;
+       border-radius: 4px;
+       margin-top: 30px;
+       font-size: 1rem;
+       width: 152px;
+       text-decoration: none;
+       margin-left: 100px;
+       background: #1abf68;
+       box-shadow: 0 0 30px 0 rgba(26, 191, 104, 0.4);
+   }
+   
+   .add-shadow {
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+   }
+   
+   .footer {
+       margin-top: -350px;
+   }
+   
+   .nav__ever {
+       line-height: 1.44;
+       padding: 20px 20px 0;
+       color: #6e6b6b;
+       font-size: 1.1rem;
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       text-decoration: none;
+       margin-left: -20px;
    }
