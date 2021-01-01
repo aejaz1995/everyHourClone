@@ -1,0 +1,143 @@
+   .landing__navbar {
+       background-color: white;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       /* margin: 20px 20px; */
+       font-family: 'geomanist-regular', sans-serif;
+       color: #6e6b6b;
+       font-size: 1.1rem;
+       font-weight: 400;
+       line-height: 1.44;
+       position: sticky;
+       z-index: 4;
+       top: -10px;
+       padding-left: 40px;
+       padding-right: 40px;
+   }
+   
+   .landing__navbar>div:nth-child(1) {
+       display: flex;
+       width: fit-content;
+       box-sizing: border-box;
+       box-sizing: border-box;
+       /* width: 120px; */
+   }
+   
+   .landing__navbar>div:nth-child(2)>a {
+       padding: 20px 20px 0;
+       color: #6e6b6b;
+       font-size: 1.1rem;
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       text-decoration: none;
+   }
+   
+   .landing__navbar>div:nth-child(2)>a:hover {
+       color: black;
+   }
+   
+   .landing__navbar>div>div {
+       /* padding: %; */
+       margin: 20px 20px;
+       width: fit-content;
+       cursor: pointer;
+   }
+   
+   .landing__navbar>div:nth-child(1)>div:nth-child(1) {
+       /* padding: %; */
+       margin: 15px -15px 20px 10px;
+   }
+   
+   .landing__navbar>div:nth-child(2) {
+       display: flex;
+       flex-direction: row;
+   }
+   
+   .landing__navbar>div:nth-child(1)>div:nth-child(n+3):nth-child(-n+6):hover {
+       color: black;
+   }
+   
+   .integrate__content {
+       display: none;
+       position: absolute;
+       transition: 1s;
+   }
+   
+   .integrate:hover .integrate__content {
+       display: flex;
+       flex-direction: column;
+       width: 300px;
+       height: 260px;
+       border-radius: 5px;
+       background-color: white;
+       border: 1px solid rgb(241, 238, 238);
+       margin-top: 10px;
+       transition: 10s;
+       padding: 1%;
+   }
+   
+   .integrate:hover .integrate__content>div {
+       display: flex;
+       flex-direction: row;
+   }
+   
+   .integrate:hover .asana {
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       letter-spacing: 1px;
+       font-size: 1rem;
+       line-height: 1.5;
+       color: #7c7c7c;
+       box-sizing: border-box;
+       text-decoration: none;
+   }
+   
+   .integrate:hover .asana__wrap {
+       display: flex;
+       flex-direction: row;
+       margin: 10px;
+       margin-bottom: 20px;
+   }
+   
+   .integrate:hover .asana__wrap>img {
+       width: 25px;
+       height: 30px;
+       margin-right: 10px;
+   }
+   
+   .integrate:hover .integrate__content>p {
+       font-family: 'geomanist-regular', sans-serif;
+       font-weight: 400;
+       letter-spacing: 1px;
+       font-size: 0.85rem;
+       color: #7c7c7c;
+       margin: 5px;
+   }
+   
+   .integrate:hover .integrate__content>p>a {
+       color: #4a90e2;
+   }
+   
+   .line__dropdown {
+       width: 280p;
+       height: 1px;
+       border: 1px solid rgb(241, 238, 238);
+   }
+   
+   .landing__signup {
+       font-family: 'geomanist-regular', sans-serif;
+       outline: 0;
+       text-decoration: none;
+       cursor: pointer;
+       border: 0;
+       color: white;
+       margin: auto;
+       border-radius: 4px;
+       background: #57bb71;
+       font-size: 1rem;
+       padding: 0 1rem;
+       margin-right: .5rem;
+       height: 40px;
+       min-width: 10px;
+   }
