@@ -1,15 +1,23 @@
                     /* navbar */
                     
+                    body {
+                        margin: 0;
+                    }
+                    
                     .landing__navbar {
+                        width: 100%;
+                        background-color: white;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        margin: 20px 20px;
+                        /* margin: 20px 20px; */
                         font-family: 'geomanist-regular', sans-serif;
                         color: #6e6b6b;
                         font-size: 1.1rem;
                         font-weight: 400;
                         line-height: 1.44;
+                        position: sticky;
+                        top: 0;
                     }
                     
                     .landing__navbar>div:nth-child(1) {
@@ -806,4 +814,8 @@
                         margin-left: 100px;
                         background: #1abf68;
                         box-shadow: 0 0 30px 0 rgba(26, 191, 104, 0.4);
+                    }
+                    
+                    .add-shadow {
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
                     }
