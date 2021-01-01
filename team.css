@@ -3,7 +3,7 @@ body{
 }
 
 .team_main{
-   margin: 5% 5% 5%;
+   margin: 2% 5% 5%;
     border: #e8e8e8 1px solid;
     height: 50vw;
     display: block;
@@ -88,7 +88,7 @@ i:hover{
 }
 
 .page_manager{
-    position: sticky;
+    /* position: sticky; */
     align-items: center;
     background: #f9f9f9;
     display: flex;
@@ -248,6 +248,8 @@ input:focus{
 
 .page_list {
     padding-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     
     
 }
@@ -284,6 +286,7 @@ input:focus{
     padding: 0 0 0 8px;
 }
 .page_list_att{
+   
     margin-top: 0;
     padding:6px 0 5px;
     justify-content: flex-start;
@@ -292,6 +295,32 @@ input:focus{
     margin-top: 12px;
     width: 100%;
 }
+/* page lable */
+.page_lable{
+    justify-content: flex-start;
+    width: 232px;
+    /* aditional */
+    justify-content: flex-end; 
+    margin-right: 32px;
+    padding: 0;
+    width: 80px;
+    text-align: right;
+    align-items: center;
+    color: #a2aab1;
+    display: flex;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.page_list_att span{
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+/*  */
 
 
 /* page-checkbox */
@@ -386,7 +415,7 @@ input:focus{
 /* tool tip  beside team*/
 
 
-.avatar {
+.team_action_popover {
     width: 1px;
     height: 1px;
     
@@ -397,8 +426,8 @@ input:focus{
     font-size: 10px;
   }
   
-  .avatar::before,
-  .avatar::after {
+  .team_action_popover::before,
+  .team_action_popover::after {
     --scale: 0;
     --arrow-size: 5px;
     --tooltip-color: #333;
@@ -411,7 +440,7 @@ input:focus{
     transform-origin: bottom center;
   }
   
-  .avatar::before {
+  .team_action_popover::before {
     --translate-y: calc(-100% - var(--arrow-size));
   
     content: attr(data-tooltip);
@@ -424,12 +453,12 @@ input:focus{
     background: var(--tooltip-color);
   }
   
-  .avatar:hover::before,
-  .avatar:hover::after {
+  .team_action_popover:hover::before,
+  .team_action_popover:hover::after {
     --scale: 1;
   }
   
-  .avatar::after {
+  .team_action_popover::after {
     --translate-y: calc(-1 * var(--arrow-size));
   
     content: '';
@@ -442,7 +471,7 @@ input:focus{
   /* tool tip for user */
 
 
-  .avatar {
+  .team_action_popover {
     width: 1px;
     height: 1px;
     
@@ -453,8 +482,8 @@ input:focus{
     font-size: 10px;
   }
   
-  .avatar::before,
-  .avatar::after {
+  .team_action_popover::before,
+  .team_action_popover::after {
     --scale: 0;
     --arrow-size: 5px;
     --tooltip-color: #333;
@@ -467,7 +496,7 @@ input:focus{
     transform-origin: bottom center;
   }
   
-  .avatar::before {
+  .team_action_popover::before {
     --translate-y: calc(-100% - var(--arrow-size));
   
     content: attr(data-tooltip);
@@ -480,12 +509,12 @@ input:focus{
     background: var(--tooltip-color);
   }
   
-  .avatar:hover::before,
-  .avatar:hover::after {
+  .team_action_popover:hover::before,
+  .team_action_popover:hover::after {
     --scale: 1;
   }
   
-  .avatar::after {
+  .team_action_popover::after {
     --translate-y: calc(-1 * var(--arrow-size));
   
     content: '';
@@ -498,7 +527,7 @@ input:focus{
 /*  tool tip on user*/
 
 
-.avatar1 {
+.show_name {
     width: 1px;
     height: 1px;
     
@@ -509,8 +538,8 @@ input:focus{
     font-size: 10px;
   }
   
-  .avatar1::before,
-  .avatar1::after {
+  .show_name::before,
+  .show_name::after {
     --scale: 0;
     --arrow-size: 5px;
     --tooltip-color: #333;
@@ -523,7 +552,7 @@ input:focus{
     transform-origin: bottom center;
   }
   
-  .avatar1::before {
+  .show_name::before {
     --translate-y: calc(-100% - var(--arrow-size));
   
     content: attr(data-tooltip);
@@ -536,12 +565,12 @@ input:focus{
     background: var(--tooltip-color);
   }
   
-  .avatar1:hover::before,
-  .avatar1:hover::after {
+  .show_name:hover::before,
+  .show_name:hover::after {
     --scale: 1;
   }
   
-  .avatar1::after {
+  .show_name::after {
     --translate-y: calc(-1 * var(--arrow-size));
   
     content: '';
