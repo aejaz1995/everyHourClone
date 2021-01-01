@@ -62,10 +62,13 @@
     }
     
     .home__body {
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: white;
+        border-radius: 5px;
     }
     
     .home__body__activity,
@@ -602,4 +605,33 @@
     
     .home__table__features {
         margin-top: 60px;
+    }
+    
+    .body_wrap {
+        padding-top: 35px;
+        background-color: #fafafa;
+    }
+    
+    .flex1_1>div {
+        border-bottom: 0 !important;
+    }
+    
+    .flex1_1>div:first-child {
+        color: black !important;
+        margin-bottom: -10px;
+        border-bottom: 2px solid #24be6a !important;
+    }
+    
+    .flex1_1>div:first-child>a {
+        color: black;
+    }
+    
+    .flex1_1>div>a {
+        font-weight: 500 !important;
+        text-shadow: 0.1px 0.1px #111111;
+    }
+    
+    .flex1_1 {
+        position: relative;
+        left: 50px;
     }
