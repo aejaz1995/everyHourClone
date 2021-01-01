@@ -124,9 +124,7 @@
                         border: 1px solid rgb(241, 238, 238);
                     }
                     
-                    .integrate:hover .integrate__content>div {}
-                    
-                    .landing__navbar>div:nth-child(1)>div:nth-child(n+3):nth-child(-n+6) {}
+                   
                     
                     .landing__signup {
                         font-family: 'geomanist-regular', sans-serif;

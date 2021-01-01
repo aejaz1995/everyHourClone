@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="team.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- ///// -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="team_main">
+            <div class="team_main_title">
+                <h1>Team
+                    <span class="icon_menu avatar" data-tooltip="Team actions">
+                        <i  onclick="popup()" class="material-icons">&#xe5d3;</i>
+                    </span>
+                </h1>
+            </div>
+            <div class="page_tabs page_tabs_settings">
+                <div class="page_tab_cont">
+                    <div id="tab_1" class="tabs active"  onclick="openTab(id,'show_member','show_period','locale_storage')"><span> Timers</span></div>
+                    <div id="tab_2" class="tabs" style="border: none;" onclick="openTab(id,'show_member')" ><span> Timesheets</span></div>
+                    <div id="tab_3" class="tabs" style="border: none;" onclick="openTab(id)"><span>Timecards</span></div>
+                    <div id="tab_4" class="tabs" style="border: none;" onclick="openTab(id,'show_checkbox','show_controller')"><span>Members</span></div>
+                </div>
+            </div>
+            <!-- below tabs -->
+            <div class="page_manager" id="page_manager">
+                        <div class="member_div  not_tabs" id='show_member'>
+                            <span  class="member_span1 ">Member :</span>
+                            <span class="all_span">All</span>
+                        </div>
+
+                <!-- time and period and search -->
+                <div class="time_period not_tabs" id="show_period" >
+                    <div class="period_drp" style=" border:1px solid #24be6a;background:white;">
+                        <div> 
+                            <span>
+                                Period
+                            </span><br>
+                            <span>
+                                Today
+                            </span>
+                        </div>
+                    </div>
+                    <!-- search div -->
+                        <div class="search_div" id="search_div">
+                            
+                            <input placeholder="search member..." type="text">
+                        </div>
+                </div>
+
+            
+                <div class="page_checkbox not_tabs" id="show_checkbox">
+                    <input type="checkbox">
+                    Select all
+                </div>
+
+                <div class="page_controller_manager not_tabs" id="show_controller">
+                    <div class="period_drp" style="background: white; border: 1px solid #e8e8e8;">
+                        <div >
+                            <span>Group By:</span><br>
+                            <span>Role</span>
+                        </div>
+                    </div>
+                <div class="controller_drpdwn">
+                    <div>
+                        <span>Filter</span>
+                        <span>active</span>
+                    </div>
+                </div>
+                <div class="search_div" id="search_div">
+                    
+                    <input placeholder="search member..." type="text">
+                </div>
+            </div>
+        </div>
+
+         <!-- after page manager -->
+         <div class="page_list">
+            <div>
+                <div class="page_list_group">
+                    <div>
+                        <div class="page_list_att">
+                            <div class="page_lable">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- from local storage -->
+        <div class="local_storage not_tabs" id="locale_storage" style="margin-top: -50px;">
+            <div>
+                <a href='#'>
+                    <span class="user_img avatar1" id="user_img" data-tooltip="asdafs">
+                    
+                    <p id="demo"></p>
+                </span></a>
+            </div>
+        </div>
+        
+        <script src="team.js"></script>
+</body>
+</html>

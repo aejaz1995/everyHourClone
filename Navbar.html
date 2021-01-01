@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Project.css">
+</head>
+
+<body>
+        <!-- navbar starts -->
+        <div class="flex1">
+            <div class="project_logo">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="not found"></a>
+            </div>
+            <div class="flex1_1">
+                <div><a href="./home.html">Home</a></div>
+                <div><a href="">Time</a></div>
+                <div><a href="./project.html">Projects</a></div>
+                <div><a href="#">Clients</a></div>
+                <div><a href="Team.html">Team</a></div>
+                <div><a href="#">Reports</a></div>
+            </div>
+            <div class="flex1_2">
+                <div id="project_subscribe"><a href="#">Subscribe Now</a></div>
+                <div>
+                    <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="https://th.bing.com/th/id/OIP.TitrLDslDLCLdg3-72BO5gHaHa?pid=Api&w=170&h=170&c=7" alt="profile image"></a>
+                </div>
+                <div class="project_dropdown">
+                    <button onclick="myFunction()" class="project_dropbtn">^</button>
+                    <div id="project_myDropdown" class="project_dropdown-content">
+                        <a href="#">My Profile</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Team Settings</a>
+                        <a href="#">Billing <button id="trial">Trial</button></a>
+                        <a href="#">Apps</a>
+                        <a href="#">Request a Demo</a>
+                        <a href="#">Help Docs</a>
+                        <a href="#"><span class="pro_sign">Sign Out</span></a>
+                    </div>
+                </div>
+
+                <script>
+                    function myFunction() {
+                        document.getElementById("project_myDropdown").classList.toggle("show");
+                    }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.project_dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("project_dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        </body>
+        </html>
