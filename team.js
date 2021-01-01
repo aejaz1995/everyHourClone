@@ -18,7 +18,7 @@ const openTab=(e,show_member,show_period,local_storage,page_list)=>{
     document.getElementById(show_member).style.display="flex"
     document.getElementById(show_period).style.display="flex"
     document.getElementById(local_storage).style.display="flex"
-        document.getElementById(local_storage).style.display="flex"
+        document.getElementById(page_list).style.display="block"
     
     if(local_storage == 'locale_storage')
     {
@@ -36,6 +36,8 @@ window.onload =()=>{
     document.getElementById('show_checkbox').style.display='none'
     
     document.getElementById('show_controller').style.display='none'
+    // timesheet should not appear onload
+    document.getElementById('show_time_sheet').style.display='none'
     
     show_local()
 }
