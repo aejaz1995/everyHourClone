@@ -26,7 +26,7 @@
                 <div><a href="#">Reports</a></div>
             </div>
             <div class="flex1_2">
-                <div><a href="#">Subscribe Now</a></div>
+                <div id="project_subscribe"><a href="#">Subscribe Now</a></div>
                 <div>
                     <a href="#"><img src="https://toppng.com/uploads/preview/bell-icon-icon-bell-transparent-11553399774sijrj1erom.png" alt="notification bell"></a>
                 </div>
@@ -71,8 +71,8 @@
         <div class="project_body">
             <div class="flex2">
                 <div class="flex2_1">
-                    <div>
-                        <h1>Projects</h1>
+                    <div id="project_h2">
+                        <h3>Projects</h3>
                     </div>
                     <div><button>Create Project</button></div>
                 </div>
@@ -83,7 +83,7 @@
                     </div>
                     <div class="project_container">
                         <div class="project_dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span>GROUP BY:</span><br>Billing
+                            <button class="btn btn-default dropdown-toggle" onclick="project_billing()" type="button" id="menu1" data-toggle="dropdown"><span>GROUP BY:</span><br><span id="project_active">Billing</span>
                           <span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">None</a></li>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="project_container">
                         <div class="project_dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span>FILTER:</span><br>Active
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown"><span>FILTER:</span><br><span id="project_active">Active</span>
                           <span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
@@ -115,7 +115,7 @@
             </div>
             </div>
             <button class="project_chat" class="open-button" id="project_chat_interval" onclick="openForm()">
-               <img src="https://www.cambodianexpress.com/giant_content/uploads/2019/07/search_icon.png" alt="chat image"> Help
+               <img src="https://vectorified.com/images/white-search-icon-transparent-background-19.png" alt="chat image"> Help
             </button>
         <div class="form-popup" id="myForm">
             <form action="https://www.google.com/" class="form-container">
@@ -141,7 +141,13 @@
               function anim(){
               var target=document.getElementById('project_chat_interval');
               target.style.display="block";
-              }      
+              }     
+              function project_billing() {
+             document.getElementById("menu1").style.border = "1px solid rgb(36, 190, 106)";
+                        } 
+                        function project_billing_return() {
+             document.getElementById("menu1").style.border = "none";
+                        } 
         </script>
         
     </body>
