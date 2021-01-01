@@ -794,3 +794,20 @@
                         top: 18px;
                         left: 18px;
                     }
+                    
+                    .whats__button {
+                        font-family: 'geomanist-regular', sans-serif;
+                        outline: 0;
+                        cursor: pointer;
+                        border: 0;
+                        color: #fff;
+                        height: 3rem;
+                        border-radius: 4px;
+                        margin-top: 30px;
+                        font-size: 1rem;
+                        width: 152px;
+                        text-decoration: none;
+                        margin-left: 100px;
+                        background: #1abf68;
+                        box-shadow: 0 0 30px 0 rgba(26, 191, 104, 0.4);
+                    }
