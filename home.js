@@ -7,7 +7,7 @@ function addIconEvents(count) {
     var addIcons = document.getElementsByClassName("add_time")
     Array.from(addIcons).map((icon, index) => {
         icon.addEventListener("click", () => {
-            document.getElementById("dayNum").value = index >= 42 ? 7 + index % 7 : index % 7
+            document.getElementById("dayNum").value = index >= count * 7 ? 7 + index % 7 : index % 7
             document.getElementById("addtime__wrap").style.display = "flex";
             fetch('https://everhourserver.herokuapp.com/members', {
                     method: 'GET',

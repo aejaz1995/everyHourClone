@@ -5,7 +5,7 @@ body {
 .team_main {
     margin: 2% 5% 5%;
     border: #e8e8e8 1px solid;
-    height: 50vw;
+    /* height: 50vw; */
     display: block;
     background: white;
 }

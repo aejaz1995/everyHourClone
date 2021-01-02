@@ -130,34 +130,56 @@ function search(){
 
 //priyanka code
 
-// document.getElementById("timers__rows").addEventListener("click",()=>{
-//     fetch('https://everhourserver.herokuapp.com/logs', {
-//             method: 'GET',
+function loadUsers(){   
+    fetch('https://everhourserver.herokuapp.com/logs', {
+            method: 'GET',
 
-//             headers: {
-//                 "Content-type": "application/json; charset=UTF-8"
-//             }
-//         })
-//         .then(response => response.json())
-//         .then(logs => {
-//             var temp = {};
-//             logs.map(el => {
-//                 if (temp[el.member] == undefined) {
-//                     temp[el.member] = {
-//                         [el.dayNum]: Number(el.workingTime.replace("h", ""))
-//                     }
-//                 } else {
-//                     if (temp[el.member][el.dayNum] == undefined) {
-//                         temp[el.member][el.dayNum] = Number(el.workingTime.replace("h", ""))
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(response => response.json())
+        .then(logs => {
+            var temp = {};
+            logs.map(el => {
+                if (temp[el.member] == undefined) {
+                    temp[el.member] = {
+                        totalTime: Number(el.workingTime.replace("h", "")),
+                        tasks:[el.comments]
+                    }
+                } else {
+                    
+                        var t = Number(el.workingTime.replace("h", ""))
+                        temp[el.member].totalTime += Number(el.workingTime.replace("h", ""))
+                        temp[el.member].tasks.push(el.comments)
 
-//                     } else {
-//                         var t = Number(el.workingTime.replace("h", ""))
-//                         temp[el.member][el.dayNum] += Number(el.workingTime.replace("h", ""))
+                    }
+                
+            })
 
-//                     }
-//                 }
-//             })
-// })
+            var data=""
+            for(i in temp){
+                var tasks=""
+                temp[i].tasks.map(task=>{tasks+=`<div>${task}</div>`})
+                data+=`<div class="member__row">
+                <div class="member__name">
+                    <div class="name_icon">
+                        ${i[0]}
+                    </div>
+                    <div class="member__name__details">${i}</div>
+                </div>
+                <div class="memeber__activity">
+                   ${tasks}
+                </div>
+                <div class="member__total"> ${temp[i].totalTime}:00</div>
+
+            </div>`
+            }
+
+            document.getElementById("timers__rows").innerHTML=data
+})
+}
+loadUsers()
 
 
 
