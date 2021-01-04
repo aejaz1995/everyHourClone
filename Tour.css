@@ -1,0 +1,885 @@
+body {
+    margin: 0;
+}
+
+.landing__navbar {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 20px 20px; */
+    font-family: 'geomanist-regular', sans-serif;
+    color: #6e6b6b;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.44;
+    position: sticky;
+    z-index: 4;
+    top: -10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.landing__navbar>div:nth-child(1) {
+    display: flex;
+    width: fit-content;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    /* width: 120px; */
+}
+
+.landing__navbar>div:nth-child(2)>a {
+    padding: 20px 20px 0;
+    color: #6e6b6b;
+    font-size: 1.1rem;
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.landing__navbar>div:nth-child(2)>a:hover {
+    color: black;
+}
+
+.landing__navbar>div>div {
+    /* padding: %; */
+    margin: 20px 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.landing__navbar>div:nth-child(1)>div:nth-child(1) {
+    /* padding: %; */
+    margin: 15px -15px 20px 10px;
+}
+
+.landing__navbar>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing__navbar>div:nth-child(1)>div:nth-child(n+3):nth-child(-n+6):hover {
+    color: black;
+}
+
+.integrate__content {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+
+/* .integrate:hover {
+display: flex;
+} */
+
+.integrate:hover .integrate__content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 260px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(241, 238, 238);
+    margin-top: 10px;
+    transition: 10s;
+    padding: 1%;
+}
+
+.integrate:hover .integrate__content>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.integrate:hover .asana {
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #7c7c7c;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.integrate:hover .asana__wrap {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.integrate:hover .asana__wrap>img {
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.integrate:hover .integrate__content>p {
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: #7c7c7c;
+    margin: 5px;
+}
+
+.integrate:hover .integrate__content>p>a {
+    color: #4a90e2;
+}
+
+.line__dropdown {
+    width: 280p;
+    height: 1px;
+    border: 1px solid rgb(241, 238, 238);
+}
+
+.landing__signup {
+    font-family: 'geomanist-regular', sans-serif;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    margin: auto;
+    border-radius: 4px;
+    background: #57bb71;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-right: .5rem;
+    height: 40px;
+    min-width: 10px;
+}
+
+
+/* time-management */
+
+.time__management__anchor {
+    text-align: center;
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    font-size: 1.38rem;
+    line-height: 1.35;
+    vertical-align: baseline;
+    color: #4a90e2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.time__management__button>button {
+    margin-top: 20px;
+    margin-right: 25px;
+    font-family: 'geomanist-regular', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    height: 3rem;
+    border-radius: 4px;
+    background: #57bb71;
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: 152px;
+}
+
+.time__management__button>button:nth-child(2) {
+    background-color: white;
+    font-family: 'geomanist-regular', sans-serif;
+    cursor: pointer;
+    border: 1px solid #3aca7f;
+    padding: 0 24px;
+    color: #57bb71;
+    font-size: 1rem;
+    line-height: 1;
+    width: 152px;
+}
+
+
+/* invoice-vedio */
+
+.invoice__vedio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* trust */
+
+.trust {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust>div {
+    font-family: 'geomanist-regular', sans-serif;
+    color: #7c7c7c;
+    font-weight: 400;
+    line-height: 1.44;
+    font-size: .875rem;
+}
+
+
+/* .whats__inside */
+
+.whats__inside__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+
+.whats__inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 100px;
+}
+
+.billing__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.happen__img {
+    justify-content: flex-end;
+}
+
+.whats__inside>h2 {
+    vertical-align: baseline;
+    margin-top: 0;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 35px;
+    line-height: 1.22;
+}
+
+
+/* track__time */
+
+.track__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.track__time__logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.track__time__logos>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.track__time>h2 {
+    text-align: center;
+    vertical-align: baseline;
+    margin-top: 100px;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 540;
+    color: #333;
+    line-height: 1.17;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+
+
+/*         
+.work{
+content: '';
+display: block;
+width: 104%;
+height: 16px;
+background-color: #d6f2e4;
+position: absolute;
+left: -2%;
+bottom: 0;
+z-index: -1;
+} */
+
+.track__time__logos>div>a {
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'geomanist-book', sans-serif;
+}
+
+.quick__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop>div:nth-child(1) {
+    background-image: url("./images/drop.svg");
+    width: 64px;
+    height: 56px;
+    transform: rotate(270deg);
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+.drop2>div:nth-child(1) {
+    background-image: url("./images/drop.svg");
+    width: 64px;
+    height: 56px;
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+
+.drop3>div:nth-child(1) {
+    background-image: url("./images/drop.svg");
+    width: 64px;
+    height: 56px;
+    transform: rotate(360deg);
+    margin-right: 20px;
+}
+
+.drop>div:nth-child(2) {
+    position: relative;
+    top: -50px;
+    right: -25px;
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    line-height: 1.44;
+    font-size: 26px;
+    color: #57bb71;
+}
+
+
+/* .dot {
+background-image: url("./images/dot.PNG");
+width: 20px;
+height: 10px;
+position: relative;
+top: -90px;
+left: -20px;
+} */
+
+.drop__text>p:nth-child(1) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'geomanist-book', sans-serif;
+    margin-right: 20px;
+}
+
+.drop__text>p:nth-child(2) {
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7c7c7c;
+    margin-right: 30px;
+}
+
+.quick__wrap {
+    margin-right: 20px;
+}
+
+
+/* .favorite__tools */
+
+.favorite__tools {
+    background-image: url(./images/fav-tools.PNG);
+    width: 100%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+.favorite__tools>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.favorite__tools>div>h2 {
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 2.2rem;
+    line-height: 1.22;
+    margin-bottom: 1.375rem;
+}
+
+.favorite__tools>div>p {
+    text-align: center;
+    font-weight: 400;
+    color: #7c7c7c;
+    line-height: 1.4;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    font-family: 'geomanist-regular', sans-serif;
+    /* font-family: 'geomanist-regular', sans-serif; */
+}
+
+.favorite__tools>div>button {
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    height: 3rem;
+    border-radius: 4px;
+    background: #57bb71;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1;
+    position: relative;
+    width: 152px;
+}
+
+.reviews {
+    background-image: url(./images/reviews.PNG);
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+/* review */
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.reviews>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.reviews>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.reviews>div:nth-child(2)>img {
+    width: 100px;
+    height: 80px;
+}
+
+.reviews>div>h2 {
+    box-sizing: border-box;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 2.25rem;
+    line-height: 1.22;
+    margin-bottom: 0rem;
+}
+
+.reviews>div:nth-child(1)>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reviews>div:nth-child(1)>div>img {
+    width: 130px;
+    height: 40px;
+}
+
+.reviews>div:nth-child(1)>div>p {
+    font-size: 1.125rem;
+    line-height: 1.44;
+    color: #7c7c7c;
+    font-family: 'geomanist', sans-serif;
+}
+
+.reviews>div:nth-child(2)>div>p {
+    margin-bottom: 1rem;
+    line-height: 1.44;
+    color: #7c7c7c;
+    font-size: 1.125rem;
+    font-family: 'geomanist-regular', sans-serif;
+}
+
+.reviews>div:nth-child(2)>div>strong {
+    line-height: 1.44;
+    color: #333;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.reviews>div:nth-child(2)>div>a {
+    color: #4a90e2;
+    font-size: 1.1rem;
+    font-family: 'geomanist-regular', sans-serif;
+    margin-top: 20px;
+}
+
+.reviews>div:nth-child(1)>h2 {
+    margin-left: 10px;
+}
+
+.shift>p:nth-child(2) {
+    margin: 0px
+}
+
+.shift>p:nth-child(2)>b {
+    color: black;
+}
+
+.shift_p {
+    margin-top: 0px;
+}
+
+.client__feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client__feedback>div {
+    font-family: 'geomanist-regular', sans-serif;
+    color: #7c7c7c;
+    font-weight: 400;
+    line-height: 1.44;
+    font-size: .875rem;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.whats__inside>h2 {
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0;
+    color: #333;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.35rem;
+    line-height: 1.17;
+    margin-bottom: 1.5rem;
+}
+
+.whats__inside {
+    font-family: 'geomanist-book', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    vertical-align: baseline;
+    line-height: 1.44;
+    font-weight: 400;
+}
+
+.whats__inside>div:hover {
+    color: #57bb71;
+}
+
+.billing__wrap {
+    margin: 10px 100px;
+}
+
+.billing__para>p {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.schedule {
+    margin-left: 90px;
+}
+
+.reports>img {
+    margin-left: 50px;
+}
+
+.pulse__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse__ul {
+    font-size: 1.127rem;
+    line-height: 1.5;
+    color: #333;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    position: relative;
+    top: 8px;
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: 0px;
+    color: #57bb71;
+    font-size: 40px;
+}
+
+ul>li {
+    margin-top: -25px;
+}
+
+.pulse__ul {
+    margin-left: 230px;
+}
+
+.pulse__wrap>div>h2 {
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 400;
+    color: #333;
+    color: black;
+    font-size: 2.25rem;
+    line-height: 1.22;
+}
+
+.pulse__wrap>div>h3 {
+    margin-bottom: .5rem;
+    font-family: 'geomanist-regular', sans-serif;
+    font-weight: 400;
+    color: #767676;
+    font-size: 1.2rem;
+    line-height: 1.45;
+}
+
+.pulse__input {
+    border-radius: 4px;
+    border: solid 1px #979797;
+    font-family: 'geomanist-regular', sans-serif;
+    color: #767676;
+    height: 48px;
+    width: 60%;
+    font-size: 1rem;
+    font-weight: normal;
+    background: #fff;
+    border-color: rgb(158, 158, 158);
+    transition: .3s;
+    outline: none;
+}
+
+.pulse__button {
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 4px;
+    background: #57bb71;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: normal;
+    min-width: 152px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: 0;
+}
+
+.footer {
+    margin-top: 150px;
+    padding: 40px;
+    background-color: rgb(19, 19, 19);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'geomanist-regular', sans-serif;
+    color: #6e6b6b;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.footer>div:first-child>img {
+    margin-top: 30px;
+    filter: invert(1);
+}
+
+.footer_column {
+    color: rgb(214, 210, 210);
+}
+
+.footer_column>ul li::before {
+    color: rgb(19, 19, 19);
+}
+
+.footer_column>ul>li:first-child {
+    color: rgb(150, 148, 148);
+}
+
+.footer_column>ul>li {
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.terms {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 60px;
+    font-family: 'geomanist-regular', sans-serif;
+    /* color: #6e6b6b; */
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.terms>div:nth-child(2)>img {
+    filter: invert(1);
+    margin-right: 8px;
+    width: 23px;
+    /* height: 50px; */
+    /* box-shadow: 1px 1px 3px 3px white; */
+    ;
+}
+
+.terms>div:nth-child(2)>i {
+    color: white;
+}
+
+.chat {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(101, 196, 101);
+    color: white;
+}
+
+.chat>img {
+    position: relative;
+    top: 18px;
+    left: 18px;
+}
+
+.whats__button {
+    font-family: 'geomanist-regular', sans-serif;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    height: 3rem;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-size: 1rem;
+    width: 152px;
+    text-decoration: none;
+    margin-left: 100px;
+    background: #1abf68;
+    box-shadow: 0 0 30px 0 rgba(26, 191, 104, 0.4);
+}
+
+.add-shadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+
+.flex1_tour {
+    display: flex;
+}
+
+.flex1_tour_one>h1 {
+    font-size: 3rem;
+    line-height: 1.17;
+    margin-bottom: 1.5rem;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: rgb(66, 58, 53);
+}
+
+.flex1_tour_one>h3 {
+    font-family: 'geomanist-regular', sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-size: 1.38rem;
+    line-height: 1.35;
+    color: #767676;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.flex1_tour_two {
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.tour_motivation1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.tour_motivation2 {
+    margin-top: 60px;
+    margin-left: 210px;
+}
+
+.tour_motivation3 {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.tour_motivation4 {
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.tour_motivation5 {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'geomanist-book', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.whats__button:hover {
+    background-color: rgb(25, 141, 25);
+}
+
+.motiv-4 {
+    width: 100%;
+}

@@ -1,0 +1,263 @@
+/* navbar css starts */
+.flex1{
+    display: flex;
+    border-bottom: 1px solid rgb(242, 242, 242) ;
+    padding-bottom: 10px;
+}
+.flex1_1>div,.flex1_2>div:nth-child(1),.flex1_2>div:nth-child(2){
+    margin-left: 25px;
+    padding-top: 25px;
+}
+.flex1_2>div:nth-child(3){
+    margin-left: 10px;
+    padding-top: 20px;
+}
+.flex1_2>div:nth-child(4){
+    margin-left: 10px;
+    padding-top: 25px;
+}
+.flex1_1,.flex1_2{
+    display: flex;
+}
+.flex1_1{
+    margin-right: 270px;
+}
+.flex1_1>div>a{
+    text-decoration: none;
+    color:#a2aab1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.flex1_1>div>a:hover{
+    color: black;
+}
+.project_logo>a>img{
+    height: 36px;
+    width: 36px;
+}
+.project_logo{
+    margin-right: 320px;
+    margin-left: 40px;
+    padding-top: 16px;
+}
+.flex1_2>div>a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.flex1_2>div:nth-child(2)>a>img{
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+}
+.flex1_2>div:nth-child(3)>a>img{
+    height: 30px;
+    width: 30px;
+}
+.flex1_2>div:nth-child(4)>button>img{
+    height: 10px;
+    width: 20px;
+    color:rgb(128, 122, 122);
+}
+#project_subscribe>a{
+    font-size: 14px;
+}
+.project_dropbtn {
+    background-color:white;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+  }
+  .project_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .project_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+    right: 0;
+    border:5px solid rgb(242, 242, 242);
+    border-radius: 8px;
+  }
+  
+  .project_dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.2px solid rgb(242, 242, 242);
+  }
+  
+  .project_dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+#trial{
+    border-radius: 8px;
+    border: 1px solid orangered;
+}  
+#project_myDropdown>a{
+    font-family: sans-serif;
+}
+.pro_sign{
+    color: red;
+}
+.project_dropdown>button{
+    height: 20px;
+    color: black;
+}
+#project_h2{
+    font-family: sans-serif;
+    font-kerning: normal;
+    font-weight: 400;
+    color: #444;
+    font-size: 24px;
+}
+/* time_body */
+.time_body{
+ background-color:  rgb(250, 250, 250);
+ height: 800px;
+ padding-top: 60px;
+}
+.time_body_one{
+    display: flex;
+    height: 60px;
+    width: 1000px;
+    margin-left: 200px;
+    background-color: white;
+    border: 1px solid rgb(242, 242, 242);
+}
+.time_body_two{
+    display: flex;
+    height: 300px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgb(242, 242, 242);
+}
+.search_icon_time>img{
+     height: 15px;
+     width: 15px;
+     margin-left: 18px;
+}
+.search_icon_time{
+    padding-top: 20px;
+}
+.search_icon_input>input{
+    border: 1px solid white;
+    width: 300px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.timer_time{
+    margin-left: 505px;
+}
+.timer_time>button{
+    height: 58px;
+    width: 150px;
+    color: white;
+    background-color: rgb(36, 190, 106);
+    border: 1px solid rgb(36, 190, 106);
+    font-size: 16px;
+    outline: none;
+}
+.timer_time>button:hover{
+    background-color: rgb(14, 117, 60);
+    border: 1px solid  rgb(14, 117, 60);
+}
+.time_chat>img{
+    height: 25px;
+    width: 25px;
+}
+.project_chat{
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 110px;
+    border-radius: 28px;
+    background-color: 	rgb(36, 190, 106);
+    margin-left: 1220px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid white;
+    outline: none;
+    
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  outline: none;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  outline: none;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  outline: none;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  outline: none;
+}
+.form-container .btn {
+  background-color: 	rgb(36, 190, 106);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  outline: none;
+}
+
+.form-container .cancel {
+  background-color: red;
+  outline: none;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.project_chat>img{
+    height: 25px;
+    width: 25px;
+}

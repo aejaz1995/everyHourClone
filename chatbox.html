@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chatbox</title>
+        <link rel="stylesheet" href="chatbox.css">
+        </head>
+        <body>
+<button class="project_chat" class="open-button" id="project_chat_interval" onclick="openForm()">
+    <img src="https://www.cambodianexpress.com/giant_content/uploads/2019/07/search_icon.png" alt="chat image"> Help
+ </button>
+ <div class="form-popup" id="myForm">
+     <form action="https://www.google.com/" class="form-container">
+       <h2>Looking For What</h2>
+   
+       <label for="searching"><b>Search</b></label>
+       <input type="text" placeholder="Search....."  required>
+
+       <button type="submit" class="btn">CLICK HERE</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+     </form>
+   </div>
+</div>
+<script>
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+             }
+
+    function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+                      } 
+   document.getElementById('project_chat_interval').style.display="none";
+   var id=setTimeout(anim,3000);
+   function anim(){
+   var target=document.getElementById('project_chat_interval');
+   target.style.display="block";
+   }      
+</script>
+
+</body>
+</html>
